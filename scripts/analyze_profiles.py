@@ -22,9 +22,9 @@ from phenome_architecture.analysis import (
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--project-root", default=".", help="Project root")
-    parser.add_argument("--shapley-permutations", type=int, default=1000)
-    parser.add_argument("--bootstrap-iterations", type=int, default=200)
-    parser.add_argument("--null-iterations", type=int, default=200)
+    parser.add_argument("--shapley-permutations", type=int, default=10000)
+    parser.add_argument("--bootstrap-iterations", type=int, default=1000)
+    parser.add_argument("--null-iterations", type=int, default=1000)
     parser.add_argument("--random-state", type=int, default=42)
     args = parser.parse_args()
 
