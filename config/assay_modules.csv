@@ -1,0 +1,11 @@
+module,component_assay,axis,stage_order
+basal_growth,Basal hyphae growth rate (mm/day),growth,1
+aerial_growth,Aerial hyphae height (total mm),growth,2
+conidiation,Conidia Number,asexual_development,3
+conidiation,Conidia Morphology,asexual_development,3
+protoperithecia,Protoperithecia Number,sexual_development,4
+protoperithecia,Protoperithecial Morphology,sexual_development,4
+perithecia,Perithecia Number,sexual_development,5
+perithecia,Perithecia Morphology,sexual_development,5
+ascospores,Ascospore Number,sexual_development,6
+ascospores,Ascospore Morphology,sexual_development,6
