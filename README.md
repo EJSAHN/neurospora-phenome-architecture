@@ -49,7 +49,7 @@ A knockout-availability workbook can be supplied explicitly:
 python scripts/run_pipeline.py --project-root . --skip-download --ko-workbook path/to/Available_KO_Strains.xlsx
 ```
 
-The default one-for-one substitutability analysis uses the 90% reference-cluster NMI target because that target contains multiple equivalent exact minimal sets. A different target can be supplied with `--substitutability-target`.
+The default workflow uses 10,000 random assay orderings and 1,000 bootstrap and null iterations for profile and cluster analyses. The one-for-one substitutability analysis uses the 90% reference-cluster NMI target because that target contains multiple equivalent exact minimal sets. Alternative values can be supplied through the command-line options of `run_pipeline.py`.
 
 ## Workflow steps
 
