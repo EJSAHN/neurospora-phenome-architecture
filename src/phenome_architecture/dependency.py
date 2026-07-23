@@ -507,7 +507,9 @@ def all_assay_substitutability_matrix(
                 "n_one_for_one_swaps": count,
             }
         )
-    np.fill_diagonal(matrix.values, 0)
+    for assay in matrix.index:
+        if assay in matrix.columns:
+            matrix.loc[assay, assay] = 0
     matrix.insert(0, "assay", matrix.index)
     matrix = matrix.reset_index(drop=True)
     return matrix, pd.DataFrame(edge_rows)
